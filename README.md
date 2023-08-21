@@ -36,6 +36,7 @@ GPU: GTX 2080Ti/TiTan RTX
 ```shell
 conda create -n ams_net python=3.8 -y
 conda activate ams_net
+conda install pytorch torchvision -c pytorch
 
 # install mmaction package
 pip install -U openmim

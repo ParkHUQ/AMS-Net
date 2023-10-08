@@ -18,12 +18,15 @@ cues and fuse coarse-level spatio-temporal features in an adaptive manner, aimin
       title={AMS-Net: Modeling Adaptive Multi-granularity
 Spatio-temporal Cues for Video Action Recognition},
       author={Wang, Qilong and Hu, Qiyao and Gao, Zilin and Li, Peihua and Hu, Qinghua},
-      booktitle={ar'Xiv},
-      year={2022}
+      booktitle={TNNLS},
+      year={2023}
     }
 ```
 
 ## Overview - AMS Net
+
+![AMS—Net_arch](fig/AMS-Net-overview.jpg)
+
 ## Our Environment and Configuration
 ```
 OS: Ubuntu 16.04
@@ -148,7 +151,7 @@ AMS-Net
 ```
 
 ## Acknowledgments
-- We thank
+- We really appreciate the works as well as the accompanying code of [TSN](https://github.com/yjxiong/tsn-pytorch), [TSM](https://github.com/mit-han-lab/temporal-shift-module), [SlowFast](https://github.com/facebookresearch/SlowFast), [TPN](https://github.com/decisionforce/TPN) and [MMaction2](https://github.com/open-mmlab/mmaction2) toolbox. Thank for all hard research work and dedication.
 
 ## Contact Information
 If you have any questions or suggestions, please feel free to leave a message or contact us directly via email: <huqy@tju.edu.cn>; <qlwang@tju.edu.cn>.

@@ -18,14 +18,14 @@ cues and fuse coarse-level spatio-temporal features in an adaptive manner, aimin
       title={AMS-Net: Modeling Adaptive Multi-granularity
 Spatio-temporal Cues for Video Action Recognition},
       author={Wang, Qilong and Hu, Qiyao and Gao, Zilin and Li, Peihua and Hu, Qinghua},
-      booktitle={TNNLS},
+      booktitle={IEEE Transactions on Neural Networks and Learning Systems(TNNLS)},
       year={2023}
     }
 ```
 
 ## Overview - AMS Net
 
-![AMS—Net_arch](fig/AMS-Net-overview.jpg)
+![AMS—Net_arch](/AMS-Net-overview.jpg)
 
 ## Our Environment and Configuration
 ```
@@ -50,8 +50,8 @@ mim install mmpose
 pip install mmaction2
 
 # install ams-net package
-git clone https://github.com/ParkHUQ/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition.git
-cd AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition
+git clone https://github.com/ParkHUQ/AMS-Net.git
+cd AMS-Net
 pip install -v -e .
 ```
 
@@ -75,18 +75,18 @@ python tools/test.py configs/recognition/ams/ams_r50_1x1x8_110e_sthv1_rgb.py \
 ### Something-Something V1/V2
 |Method|Backbone|Pertrain|Frames|1-crop(%)|multi-view(%)|Model|Config|
 |:----:|:------:|:------:|:----:|:-------:|:---------:|:----:|:----:|
-|AMS-Net|2D ResNet50|ImageNet-1K|8F|50.4/80.2|53.2/81.7|[SSV1_AMS_TSN_R50_8f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ams_r50_1x1x8_110e_sthv1_rgb.py)|
-|AMS-Net*|2D ResNet50|ImageNet-1K|8F|53.1/82.3|54.2/82.6|[SS_SSV1_AMS_TSN_R50_8f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ss_ams_r50_1x1x8_110e_sthv1_rgb.py)|
-|AMS-Net|2D ResNet50|ImageNet-1K|16F|52.4/81.7|54.2/82.5|[SSV1_AMS_TSN_R50_16f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ams_r50_1x1x16_110e_sthv1_rgb.py)|
-|AMS-Net*|2D ResNet50|ImageNet-1K|16F|53.6/82.4|54.4/82.6|[SS_SSV1_AMS_TSN_R50_16f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ss_ams_r50_1x1x16_110e_sthv1_rgb.py)|
+|AMS-Net|2D ResNet50|ImageNet-1K|8F|50.4/80.2|53.2/81.7|[SSV1_AMS_TSN_R50_8f]()|[Config](/configs/recognition/ams/ams_r50_1x1x8_110e_sthv1_rgb.py)|
+|AMS-Net*|2D ResNet50|ImageNet-1K|8F|53.1/82.3|54.2/82.6|[SS_SSV1_AMS_TSN_R50_8f]()|[Config](/configs/recognition/ams/ss_ams_r50_1x1x8_110e_sthv1_rgb.py)|
+|AMS-Net|2D ResNet50|ImageNet-1K|16F|52.4/81.7|54.2/82.5|[SSV1_AMS_TSN_R50_16f]()|[Config](/configs/recognition/ams/ams_r50_1x1x16_110e_sthv1_rgb.py)|
+|AMS-Net*|2D ResNet50|ImageNet-1K|16F|53.6/82.4|54.4/82.6|[SS_SSV1_AMS_TSN_R50_16f]()|[Config](/configs/recognition/ams/ss_ams_r50_1x1x16_110e_sthv1_rgb.py)|
 |AMS-Net(E)|2D ResNet50|ImageNet-1K|8F+16F|55.3/83.6|56.1/83.7|--|--|
 
 |Method|Backbone|Pertrain|Frames|1-crop(%)|multi-view(%)|Model|Config|
 |:----:|:------:|:------:|:----:|:-------:|:---------:|:----:|:----:|
-|AMS-Net|2D ResNet50|ImageNet-1K|8F|62.4/88.6|65.3/89.7|[SSV2_AMS_TSN_R50_8f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ams_r50_1x1x8_120e_sthv2_rgb.py)|
-|AMS-Net*|2D ResNet50|ImageNet-1K|8F|65.4/90.2|66.7/90.8|[SS_SSV2_AMS_TSN_R50_8f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ss_ams_r50_1x1x8_120e_sthv2_rgb.py)|
-|AMS-Net|2D ResNet50|ImageNet-1K|16F|64.1/89.8|66.0/90.5|[SSV2_AMS_TSN_R50_16f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ams_r50_1x1x16_120e_sthv2_rgb.py)|
-|AMS-Net*|2D ResNet50|ImageNet-1K|16F|65.6/90.3|66.9/90.9|[SS_SSV2_AMS_TSN_R50_16f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ss_ams_r50_1x1x16_120e_sthv2_rgb.py)|
+|AMS-Net|2D ResNet50|ImageNet-1K|8F|62.4/88.6|65.3/89.7|[SSV2_AMS_TSN_R50_8f]()|[Config](/configs/recognition/ams/ams_r50_1x1x8_120e_sthv2_rgb.py)|
+|AMS-Net*|2D ResNet50|ImageNet-1K|8F|65.4/90.2|66.7/90.8|[SS_SSV2_AMS_TSN_R50_8f]()|[Config](/configs/recognition/ams/ss_ams_r50_1x1x8_120e_sthv2_rgb.py)|
+|AMS-Net|2D ResNet50|ImageNet-1K|16F|64.1/89.8|66.0/90.5|[SSV2_AMS_TSN_R50_16f]()|[Config](/configs/recognition/ams/ams_r50_1x1x16_120e_sthv2_rgb.py)|
+|AMS-Net*|2D ResNet50|ImageNet-1K|16F|65.6/90.3|66.9/90.9|[SS_SSV2_AMS_TSN_R50_16f]()|[Config](/configs/recognition/ams/ss_ams_r50_1x1x16_120e_sthv2_rgb.py)|
 |AMS-Net(E)|2D ResNet50|ImageNet-1K|8F+16F|67.0/90.9|67.8/91.4|--|--|
 
 ### FineGym & Diving48
@@ -94,23 +94,23 @@ python tools/test.py configs/recognition/ams/ams_r50_1x1x8_110e_sthv1_rgb.py \
 
 |Method|Dataset|Backbone|Pertrain|Frames|Mean(%)|Top-1(%)|Model|Config|
 |:----:|:-------:|:------:|:------:|:----:|:-------:|:---------:|:----:|:----:|
-|AMS-Net|Gym99|SlownOnly R50|ImageNet-1K|16F|91.9|94.3|[AMS_SlowOnlyR50_Gym99_16f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ams_slowonlyR50_pretrained_16x4x1_110e_gym99_rgb.py)|
-|AMS-Net|Gym288|SlownOnly R50|ImageNet-1K|16F|65.3|90.9|[AMS_SlowOnlyR50_Gym288_16f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ams_slowonlyR50_pretrained_r50_16x4x1_110e_gym288_rgb.py)|
+|AMS-Net|Gym99|SlownOnly R50|ImageNet-1K|16F|91.9|94.3|[AMS_SlowOnlyR50_Gym99_16f]()|[Config](/configs/recognition/ams/ams_slowonlyR50_pretrained_16x4x1_110e_gym99_rgb.py)|
+|AMS-Net|Gym288|SlownOnly R50|ImageNet-1K|16F|65.3|90.9|[AMS_SlowOnlyR50_Gym288_16f]()|[Config](/configs/recognition/ams/ams_slowonlyR50_pretrained_r50_16x4x1_110e_gym288_rgb.py)|
 
 - Diving 48
 
 |Method|Dataset Version|Backbone|Pertrain|Frames|Top-1(%)|Model|Config|
 |:----:|:-------:|:-----:|:------:|:----:|:-------:|:------:|:----:|
-|AMS-Net|V1|2D ResNet50|ImageNet-1K|16F|44.4|[AMS_Diving48_V1_16f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ams_r50_1x1x16_75e_diving48_rgb.py)|
-|AMS-Net|V2|2D ResNet50|ImageNet-1K|16F|90.1|[AMS_Diving48_V2_16f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ams_r50_1x1x16_75e_diving48_rgb.py)|
+|AMS-Net|V1|2D ResNet50|ImageNet-1K|16F|44.4|[AMS_Diving48_V1_16f]()|[Config](/configs/recognition/ams/ams_r50_1x1x16_75e_diving48_rgb.py)|
+|AMS-Net|V2|2D ResNet50|ImageNet-1K|16F|90.1|[AMS_Diving48_V2_16f]()|[Config](/configs/recognition/ams/ams_r50_1x1x16_75e_diving48_rgb.py)|
 
 ### Kinetics 400
 
 |Method|Dataset|Backbone|Pertrain|Frames|Top-1(%)|Top-5(%)|Model|Config|
 |:----:|:-------:|:------:|:------:|:----:|:-------:|:---------:|:----:|:----:|
-|AMS-Net|mini-K200|SlownOnly R50|ImageNet-1K|8F|81.7|-|[AMS_SlowOnlyR50_MiniK200_8f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ams_slowonlyR50_imagenet_pretrained_8x8x1_60e_kinetics200_rgb.py)|
-|AMS-Net|K400|SlownOnly R50|ImageNet-1K|8F|77.1|93.0|[AMS_SlowOnlyR50_Kinetics400_8f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ams_slowonlyR50_imagenet_pretrained_8x8x1_130e_kinetics400_rgb.py)|
-|AMS-Net|K400|SlownOnly R50|ImageNet-1K|16F|78.0|93.3|[AMS_SlowOnlyR50_Kinetics400_16f]()|[Config](/AMS-Net-Adaptive-Multi-granularity-Spatio-temporal-Network-for-Video-Action-Recognition/configs/recognition/ams/ams_slowonlyR50_imagenet_pretrained_16x4x1_130e_kinetics400_rgb.py)|
+|AMS-Net|mini-K200|SlownOnly R50|ImageNet-1K|8F|81.7|-|[AMS_SlowOnlyR50_MiniK200_8f]()|[Config](/configs/recognition/ams/ams_slowonlyR50_imagenet_pretrained_8x8x1_60e_kinetics200_rgb.py)|
+|AMS-Net|K400|SlownOnly R50|ImageNet-1K|8F|77.1|93.0|[AMS_SlowOnlyR50_Kinetics400_8f]()|[Config](/configs/recognition/ams/ams_slowonlyR50_imagenet_pretrained_8x8x1_130e_kinetics400_rgb.py)|
+|AMS-Net|K400|SlownOnly R50|ImageNet-1K|16F|78.0|93.3|[AMS_SlowOnlyR50_Kinetics400_16f]()|[Config](/configs/recognition/ams/ams_slowonlyR50_imagenet_pretrained_16x4x1_130e_kinetics400_rgb.py)|
 
 
 ## Code components

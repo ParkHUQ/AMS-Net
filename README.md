@@ -2,7 +2,7 @@
 AMS-Net: Modeling Adaptive Multi-granularity
 Spatio-temporal Cues for Video Action Recognition
 
-This is an code implementation of AMS-Net[[paper]](), created by Qilong Wang, Qiyao Hu and Zilin Gao.
+This is an code implementation of AMS-Net[[paper]](https://ieeexplore.ieee.org/abstract/document/10283898), created by Qilong Wang, Qiyao Hu and Zilin Gao.
 ## Introduction
 
 Effective spatio-temporal modeling as a core of

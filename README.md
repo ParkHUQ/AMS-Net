@@ -75,7 +75,7 @@ python tools/test.py configs/recognition/ams/ams_r50_1x1x8_110e_sthv1_rgb.py \
 ### Something-Something V1/V2
 |Method|Backbone|Pertrain|Frames|1-crop(%)|multi-view(%)|Model|Config|
 |:----:|:------:|:------:|:----:|:-------:|:---------:|:----:|:----:|
-|AMS-Net|2D ResNet50|ImageNet-1K|8F|50.4/80.2|53.2/81.7|[SSV1_AMS_TSN_R50_8f]()|[Config](/configs/recognition/ams/ams_r50_1x1x8_110e_sthv1_rgb.py)|
+|AMS-Net|2D ResNet50|ImageNet-1K|8F|50.4/80.2|53.2/81.7|[SSV1_AMS_TSN_R50_8f](https://huggingface.co/hhhu8/AMS-Net/resolve/main/AMS_R50_SSV1_8f.pth)|[Config](/configs/recognition/ams/ams_r50_1x1x8_110e_sthv1_rgb.py)|
 |AMS-Net*|2D ResNet50|ImageNet-1K|8F|53.1/82.3|54.2/82.6|[SS_SSV1_AMS_TSN_R50_8f]()|[Config](/configs/recognition/ams/ss_ams_r50_1x1x8_110e_sthv1_rgb.py)|
 |AMS-Net|2D ResNet50|ImageNet-1K|16F|52.4/81.7|54.2/82.5|[SSV1_AMS_TSN_R50_16f]()|[Config](/configs/recognition/ams/ams_r50_1x1x16_110e_sthv1_rgb.py)|
 |AMS-Net*|2D ResNet50|ImageNet-1K|16F|53.6/82.4|54.4/82.6|[SS_SSV1_AMS_TSN_R50_16f]()|[Config](/configs/recognition/ams/ss_ams_r50_1x1x16_110e_sthv1_rgb.py)|
